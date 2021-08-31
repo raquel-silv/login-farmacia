@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<head>
+	
+		<title>Criar sua Conta</title>
+		<style>
+			body {
+    background-color: #f6f6f5;
+}
+h1 {
+    background-color: #095280;
+		</style>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	</head>
+
+	 <!--COMEÇO-->
+	<body>
+		<center>
+		<img src="https://clinicasaudemais.com/images/estrutura/saude-mais-gr.png"></center>
+		<br>
+		<font style="color: #f0f0f0">
+		<center><h1><i>Seja Bem-Vindo!</i></h1></font>
+		<br>
+		<div class="classeTexto"><label>Para ter uma conta em nossa rede, e ficar sabendo das novidades, basta colocar seus dados de usuários e será cadastrado!</label></div>
+<br>
+	<div class="classeTexto"><p style="color: blue;"><u>Faça seu <strong>Cadastro</strong> abaixo</u></p></div> 
+		<!--FORMULÁRIO-->
+		<fieldset class="group">
+	 <form method="post"><center>
+<br><div>
+	                <label for="nome"><strong>Nome</strong></label>
+	                <input type="text" name="nome" id="nome" required> 
+	                &ensp;
+	                <label for="sobrenome"><strong>Sobrenome</strong></label>
+	                <input type="text" name="sobrenome" id="sobrenome" required></center></form>
+	    <br>
+	    <form>
+	         	<center><label for="CPF"><strong>CPF</strong></strong></label>
+	        	<input type="text" name="CPF" id="CPF" required="">
+	        	&ensp;&ensp;&ensp;
+	        	<label for="Senha"><strong>Senha</strong></strong></label>
+	        	<input type="password" name="Senha" required=""></center>
+	    </form>
+	     <br>
+	    <br><center>
+	            <label for="telefone"><strong>Telefone ou Celular</strong><p></label>
+	            <input type="text" name="telefone" id="telefone">
+</center></fieldset></div>
+		<br>
+		<form>
+		<strong><label>Selecione o seu gênero:</label></strong>
+		<input type="radio" name="sex" value="male"> Masculino
+		<input type="radio" name="sex" value="female"> Feminino
+		<input type="radio" name="sex" value="nao-binario"> Não-Binário
+		<input type="radio" name="sex" value="personalizado"> Prefiro não dizer
+		</form>
+<br>
+	        <div class="campo">
+	        <div class="classeTexto"><label for="estado"><strong>Estado Civil</strong></label></div>
+	        <select id="estado"><div class="classeTextoFonte"><option selected disabled value="">Selecione</option></div>
+	        <option>Casaddo(a)</option>
+	       	<option>Solteiro(a)</option>
+	        <option>Divorciado(a)</option>
+	        <option>Viúvo(a)</option>
+	        </select>
+	        </div>
+
+	    <br>
+	        <div class="campo">
+	            <br>
+	            <div class="classeTexto"><label><i style="color: #666;">(opcional)</i>Comentário para a melhora do site:</label><p></div>
+	            <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+	        </div>
+	    <br>
+	       <form>
+  <div class="classeTextoFonte"><input type="button" value="Concluído" onclick="msg()">
+</form>
+
+<script>
+function msg(){
+  alert("Seu Cadastro foi Enviado com Sucesso!");
+}
+</script>
+	    </form>
+	   	</body>
+	   	<br><br>
+	   	<br><br>
+</html>
